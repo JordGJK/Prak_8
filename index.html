@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UPLOAD FILE</title>
+</head>
+<body>
+    <h1>UPLOAD FILE</h1>
+    
+    <!-- Форма для PHP -->
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="fileToUpload" required>
+        <button type="submit">UPLOAD (PHP)</button>
+    </form>
+
+    <!-- Форма для Node.js -->
+    <form action="http://localhost:5000/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="fileToUpload" required>
+        <button type="submit">UPLOAD (Node.js)</button>
+    </form>
+</body>
+</html>
